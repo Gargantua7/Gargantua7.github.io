@@ -13,67 +13,23 @@
                 margin: 0 15%;
                 background: white;
             }
-
-            .welcome {
-                margin: 20px 0 0 2%;
-                float: left;
-                width: 250px;
-            }
-
-            .search {
-                margin: 40px 2% 0 0;
-                float: right;
-                width: 50%;
-                font-size: 300%;
-            }
-
-            .sub {
-                width: 60px;
-                height: 32px;
-                border-width: 0;
-                background-color: #6699FF;
-                color: white;
-                float: right
-            }
-
-            .text {
-                width: 40%;
-                height: 30px;
-                border: 1px solid #6699FF;
-                padding: 0 10px;
-                float: right
-            }
-
-            @media screen and (max-width: 800px) {
-                body {
-                    margin: 0;
-                }
-
-                .welcome, .search, .text {
-                    width: 96%;
-                    margin: auto;
-                    float: none;
-                    text-align: center;
-                }
-
-                .sub {
-                    display: none;
-                }
-            }
         </style>
     </head>
     <body>
-        <div class="welcome">
+        <div style="margin: 20px 0 0 2%; float: left; width: 250px;">
             <span>
                 Welcome to <br/>
                 <em style="color: #6699FF; font-style: normal; font-size: 200%">HANAMI233</em>'s <br/>
                 GitHub Pages
             </span>
         </div>
-        <div class="search">
-        <form action="https://www.baidu.com/" target="_blank">
-            <input type="submit" value="Search" class="sub">
-            <input type="text" class="text" placeholder="Search">
-        </form></div>
+        <div style="margin: 40px 2% 0 0; float: right; width: 50%; font-size: 300%;">
+            <form action="https://www.baidu.com/" target="_blank">
+                <input type="submit" value="Search" style="width: 60px; height: 32px;
+                border-width: 0; background-color: #6699FF; color: white; float: right">
+                <input type="text" style="width: 40%; height: 30px; border: 1px solid #6699FF;
+                padding: 0 10px; float: right" placeholder="Search">
+            </form>
+        </div>
     </body>
 </html>
