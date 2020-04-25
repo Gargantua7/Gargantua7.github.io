@@ -3,54 +3,119 @@
     <head>
         <meta charset="UTF-8">
         <title>HANAMI233's GitHub</title>
-        <style>
-            * {
-                margin: 0;
-                border-width: 0;
-                padding: 0;
-            }
-
-            body {
-                height: 2000px;
-                background: #f1f1f1;
-            }
-
-            .row {
-                margin: 0 15%;
-            }
-
-            .top {
-                overflow: hidden;
-                background-color: #6699FF;
-                position: -webkit-sticky;
-                position: sticky;
-                top: 0;
-            }
-
-            .top a {
-                float: left;
-                display: block;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-            .top a:hover {
-                background-color: blue;
-            }
-        </style>
+        <link rel="stylesheet" href="body.css">
     </head>
     <body>
         <iframe src="top.html" style="width: 100%; height: 120px;" id="top"></iframe>
         <div class="top">
             <div style="margin: 1px 7.5%; float: left;"></div>
-            <a href="#top">Home</a>
-            <a href="#">Repositories</a>
+            <a href="#stickyNews">Home</a>
+            <a href="#repositories">Repositories</a>
             <div style="margin: 1px 7.5%; float: right;"></div>
+            <a href="#top" style="float: right">TOP</a>
         </div>
         <div class="row">
-            <h1>Building...</h1>
+            <div class="leftCol">
+                <div>
+                    <h1 class="title" id="stickyNews">置顶动态</h1>
+                </div>
+                <div class="news" >
+                    <div class="newsTop">
+                        <div style="margin: 10px 2%;padding: 1px 0; width: 60%;float: left">
+                            <h2>「Mine-Sweep」已入库！(✪ω✪)</h2>
+                            <p style="margin: 1px 2%">2020/4/25</p>
+                        </div>
+                        <a href="https://github.com/HANAMI233/Mine-Sweep" target="_blank">
+                            Go to GitHub<br/>Repositories
+                        </a>
+                    </div>
+                    <div class="newsDiv">
+                        <div style="height: auto">
+                            <img src="resource/img/Mine-Sweep.png" alt="Mine-Sweep"/>
+                            <div style="width: 60%; float: left">
+                                嘛，反正无聊写的小游戏；但也完成度还算不错，至少基本的功能是有了，
+                                有在考虑往里面加一点主题元素之类的。<br/><br/>
+                                使用语言: Java 8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="title" id="repositories" style="">仓库列表</h1>
+                </div>
+                <div class="news" >
+                    <div class="newsTop">
+                        <div style="margin: 10px 2%;padding: 1px 0; width: 60%;float: left">
+                            <h2 style="margin: 0 2%">Empty Directory Clean Master</h2>
+                            <p style="margin: 1px 2%">2020/1/31</p>
+                        </div>
+                        <a href="https://github.com/HANAMI233/Empty-Directory-Clean-Master" target="_blank">
+                            Go to GitHub<br/>Repositories
+                        </a>
+                    </div>
+                    <div class="newsDiv">
+                        <div style="height: auto">
+                            <img src="resource/img/Empty-Directory-Clean-Master.png" alt="Mine-Sweep" style="float: right"/>
+                            <div style="width: 60%">
+                                当时浏览资源管理器的时候发现空的文件夹实在是太多了。遂写了一个这东西。
+                                功能很基础，就是清理一下空的文件夹。仅此而已。有设计GUI界面。<br/><br/>
+                                使用语言: Java 8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news" >
+                    <div class="newsTop">
+                        <div style="margin: 10px 2%;padding: 1px 0; width: 60%;float: left">
+                            <h2 style="margin: 0 2%">Internet Cafe Management System</h2>
+                            <p style="margin: 1px 2%">2019/12/11</p>
+                        </div>
+                        <a href="https://github.com/HANAMI233/InternetCafeManagementSystem" target="_blank">
+                            Go to GitHub<br/>Repositories
+                        </a>
+                    </div>
+                    <div class="newsDiv">
+                        <div style="height: auto">
+                            <div style="width: 60%">
+                                大学学Java的课程的一个大作业。本来说是团队完成的... <br/>
+                                我才不会说是队友拖到最后都没写完然后一个人全包了的... <br/>
+                                哎呀，说出来了，牙——白——。<br/><br/>
+                                使用语言: Java 8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news" >
+                    <div class="newsTop">
+                        <div style="margin: 10px 2%;padding: 1px 0; width: 60%;float: left">
+                            <h2 style="margin: 0 2%">Internet Cafe Management System ( C )</h2>
+                            <p style="margin: 1px 2%">远古时期</p>
+                        </div>
+                        <a href="https://github.com/HANAMI233/NIM_C" target="_blank">
+                            Go to GitHub<br/>Repositories
+                        </a>
+                    </div>
+                    <div class="newsDiv">
+                        <div style="height: auto">
+                            <div style="width: 60%">
+                                同上，一样的，只不过是用C写的。没有GUI。 <br/>
+                                甚至是因为相同原因导致是我个人写的....<br/><br/>
+                                使用语言: C 11
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin: 50px">
+                    <h1>And More...</h1>
+                </div>
+            </div>
+            <div class="rightCol">
+                <div>
+                    <h1>Building...</h1>
+                </div>
+
+            </div>
         </div>
+        <iframe src="bottom.html" style="width: 100%; height: 200px;display:block;"></iframe>
     </body>
 </html>

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+
+body {
+    background: #f1f1f1;
+    height: 1770px;
+}
+
+.row {
+    margin: 10px 15%;
+}
+
+.top {
+    overflow: hidden;
+    background-color: #6699FF;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.top a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.top a:hover {
+    background-color: blue;
+}
+
+.leftCol {
+    width: 70%;
+    float: left;
+}
+
+.rightCol {
+    width: 30%;
+    float: left;
+}
+
+.title {
+    margin: 20px;
+    padding: 1px 5px 6px 10px;
+    border-left: 5px solid #6699FF;
+    color: #6699FF;
+}
+
+.news {
+    margin: 5px 2% 20px 2%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.newsDiv, .newsDiv div {
+    margin: 10px 0;
+    padding: 1px 5%;
+}
+
+.news img {
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
+    max-width: 200px;
+    max-height: 200px;
+    position: relative;
+}
+
+.newsTop {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 0;
+    width: auto;
+    background-color: #6699FF;
+    color: white;
+    overflow: hidden;
+}
+
+.newsTop a {
+    width: 120px;
+    height: 100%;
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.newsTop a:hover {
+    background-color: blue;
+}
