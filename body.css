@@ -65,6 +65,7 @@ body {
 }
 
 .news img {
+    margin: 0 0 10px 10px;
     border-radius: 15px;
     box-shadow: 5px 5px 5px grey;
     max-width: 200px;
