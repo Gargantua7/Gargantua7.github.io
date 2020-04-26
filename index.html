@@ -3,16 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>HANAMI233's GitHub</title>
-        <link rel="shortcut icon" href="resource/img/logo.ico">
-        <link rel="stylesheet" href="body.css">
+        <link href="resource/img/logo.ico" rel="shortcut icon">
+        <link href="body.css" rel="stylesheet">
     </head>
     <body>
-        <iframe src="top.html" style="width: 100%; height: 120px;" id="top"></iframe>
+        <div class="row" style="background-color: white; display:block;">
+            <iframe id="top" src="top.html" style="width: 100%; height: 120px;"></iframe>
+        </div>
         <div class="top">
-            <div style="margin: 1px 7.5%; float: left;"></div>
+            <div class="topMar" style="float: left;"></div>
             <a href="#stickyNews">Home</a>
             <a href="#repositories">Repositories</a>
-            <div style="margin: 1px 7.5%; float: right;"></div>
+            <div class="topMar" style="float: right;"></div>
             <a href="#top" style="float: right">TOP</a>
         </div>
         <div class="row">
@@ -20,7 +22,7 @@
                 <div>
                     <h1 class="title" id="stickyNews">置顶动态</h1>
                 </div>
-                <div class="news" >
+                <div class="news">
                     <div class="newsTop">
                         <div style="margin: 10px 2%;padding: 1px 0; width: 60%;float: left">
                             <h2>「Mine-Sweep」已入库！(✪ω✪)</h2>
@@ -32,7 +34,7 @@
                     </div>
                     <div class="newsDiv">
                         <div style="min-height: 220px">
-                            <img src="resource/img/Mine-Sweep.png" alt="Mine-Sweep" style="float: right"/>
+                            <img alt="Mine-Sweep" src="resource/img/Mine-Sweep.png" style="float: right"/>
                             <div>
                                 扫雷<br/><br/>
                                 风格是想仿造Windows XP时期的预装的扫雷，一代经典了... <br/><br/>
@@ -46,7 +48,7 @@
                 <div>
                     <h1 class="title" id="repositories">仓库列表</h1>
                 </div>
-                <div class="news" >
+                <div class="news">
                     <div class="newsTop">
                         <div style="margin: 10px 2%;padding: 1px 0; width: 60%;float: left">
                             <h2 style="margin: 0 2%">Empty Directory Clean Master</h2>
@@ -58,7 +60,8 @@
                     </div>
                     <div class="newsDiv">
                         <div style="height: auto">
-                            <img src="resource/img/Empty-Directory-Clean-Master.png" alt="Mine-Sweep" style="float: right"/>
+                            <img alt="Mine-Sweep" src="resource/img/Empty-Directory-Clean-Master.png"
+                                 style="float: right"/>
                             <div>
                                 当时浏览资源管理器的时候发现空的文件夹实在是太多了。遂写了一个这东西。
                                 功能很基础，就是清理一下空的文件夹。仅此而已。有设计GUI界面。<br/><br/>
@@ -67,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="news" >
+                <div class="news">
                     <div class="newsTop">
                         <div style="margin: 10px 2%;padding: 1px 0; width: 60%;float: left">
                             <h2 style="margin: 0 2%">Internet Cafe Management System</h2>
@@ -88,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="news" >
+                <div class="news">
                     <div class="newsTop">
                         <div style="margin: 10px 2%;padding: 1px 0; width: 60%;float: left">
                             <h2 style="margin: 0 2%">Internet Cafe Management System ( C )</h2>
@@ -113,12 +116,67 @@
                 </div>
             </div>
             <div class="rightCol">
-                <div>
-                    <h1>Building...</h1>
+                <div class="news">
+                    <div class="newsTop" style="border-radius: 15px">
+                        <div style="margin: 10px 2%;padding: 1px 0">
+                            <h3 style="margin: 0 2%">推荐使用1920*1080分辨率或以上的窗口浏览以获得最佳体验</h3>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="news">
+                    <div class="newsTop">
+                        <div style="margin: 10px 2%;padding: 1px 0; width: 60%;float: left">
+                            <h1 style="margin: 0 2%">About me</h1>
+                        </div>
+                    </div>
+                    <div class="newsDiv">
+                        <div style="height: auto">
+                            <div style="display:flex; justify-content: center">
+                                <a href="https://github.com/HANAMI233" target="_blank">
+                                    <img alt="my icon"
+                                         src="https://avatars2.githubusercontent.com/u/49100066?s=460&u=62f7c82ba984dcae76ad109353cbdf3a452b193c&v=4"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://github.com/HANAMI233" target="_blank" style="text-decoration: none; color: black">
+                                    <h1 style="line-height: 10px; text-align: center">
+                                        <span itemprop="name"
+                                              style="font-size: 26px; line-height: 30px;">HANAMI</span><br/>
+                                        <span itemprop="additionalName"
+                                              style="font-size: 20px; font-style: normal; font-weight: 300; line-height: 24px; color: #666;">HANAMI233</span>
+                                    </h1>
+                                </a>
+                                <p><br/></p>
+                                <p>
+                                    <span>
+                                        <em style="font-weight: bolder; font-style: normal">常用语言：</em>
+                                        Java, C / C++
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="newsTop">
+                        <div style="margin: 10px 2%;padding: 1px 0; width: 60%;float: left">
+                            <h1 style="margin: 0 2%">TIPS</h1>
+                        </div>
+                    </div>
+                    <div class="newsDiv">
+                        <div style="height: auto">
+                            <div>
+                                <p>
+                                    <span>
+                                        这里暂时还什么都没有...
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <iframe src="bottom.html" style="width: 100%; height: 200px;display:block;"></iframe>
+        <iframe src="bottom.html" style="width: 100%; height: 250px; display:block;"></iframe>
     </body>
 </html>
