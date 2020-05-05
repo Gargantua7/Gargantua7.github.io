@@ -34,6 +34,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition-duration: 0.4s;
 }
 
 .top a:hover {
@@ -106,14 +107,16 @@ body {
 @media screen and (max-width: 1200px) {
     .leftCol, .rightCol {
         width: 100%;
-
+        transition-duration: 0.4s;
     }
 
     .row {
        padding: 10px 5%;
+        transition-duration: 0.4s;
     }
 
     .topMar {
         margin: 1px 2.5%;
+        transition-duration: 0.4s;
     }
 }

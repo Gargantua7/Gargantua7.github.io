@@ -2,23 +2,25 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>HANAMI233's GitHub</title>
+        <title>HANAMI233</title>
         <link href="resource/img/logo.ico" rel="shortcut icon">
         <link href="body.css" rel="stylesheet">
     </head>
     <body>
-        <div class="row" style="background-color: white; display:block;">
-            <iframe id="top" src="top.html" style="width: 100%; height: 120px;"></iframe>
-        </div>
-        <div class="top">
-            <div class="topMar" style="float: left;"></div>
-            <a href="#stickyNews">Home</a>
-            <a href="#repositories">Repositories</a>
-            <div class="topMar" style="float: right;"></div>
-            <a href="#top" style="float: right">TOP</a>
-        </div>
-        <div class="row">
-            <div class="leftCol">
+        <header>
+            <div class="row" style="background-color: white; display:block;" id="t">
+                <iframe id="top" src="top.html" style="width: 100%; height: 120px;"></iframe>
+            </div>
+            <div class="top">
+                <div class="topMar" style="float: left;" id="tml"></div>
+                <a style="padding-bottom: 10px; border-bottom: 4px solid blue">Home</a>
+                <a href="Repositories.html">Repositories</a>
+                <div class="topMar" style="float: right;" id="tmr"></div>
+                <a href="#top" style="float: right">TOP</a>
+            </div>
+        </header>
+        <div class="row" id="body">
+            <div class="leftCol" id="lc">
                 <div>
                     <h1 class="title" id="stickyNews">置顶动态</h1>
                 </div>
@@ -115,7 +117,7 @@
                     <h1>And More...</h1>
                 </div>
             </div>
-            <div class="rightCol">
+            <div class="rightCol" id="rc">
                 <div class="news">
                     <div class="newsTop" style="border-radius: 15px">
                         <div style="margin: 10px 2%;padding: 1px 0">
@@ -138,7 +140,8 @@
                                 </a>
                             </div>
                             <div>
-                                <a href="https://github.com/HANAMI233" target="_blank" style="text-decoration: none; color: black">
+                                <a href="https://github.com/HANAMI233" style="text-decoration: none; color: black"
+                                   target="_blank">
                                     <h1 style="line-height: 10px; text-align: center">
                                         <span itemprop="name"
                                               style="font-size: 26px; line-height: 30px;">HANAMI</span><br/>
@@ -177,6 +180,17 @@
                 </div>
             </div>
         </div>
-        <iframe src="bottom.html" style="width: 100%; height: 250px; display:block;"></iframe>
+        <script>
+            window.onload = function () {
+                document.getElementById('t').style.transitionDuration = "0.4s";
+                document.getElementById('tml').style.transitionDuration = "0.4s";
+                document.getElementById('tmr').style.transitionDuration = "0.4s";
+                document.getElementById('lc').style.transitionDuration = "0.4s";
+                document.getElementById('lr').style.transitionDuration = "0.4s";
+            }
+        </script>
+        <footer>
+            <iframe src="bottom.html" style="width: 100%; height: 250px; display:block;"></iframe>
+        </footer>
     </body>
 </html>

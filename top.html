@@ -8,7 +8,7 @@
                 margin: 0;
                 padding: 0;
             }
-
+            
             body {
                 background: white;
             }
@@ -23,12 +23,27 @@
             </span>
         </div>
         <div style="margin: 40px 2% 0 0; float: right; width: 50%; font-size: 300%;">
-            <form action="https://www.baidu.com/s" target="_blank">
-                <input type="submit" value="Search" style="width: 60px; height: 32px;
-                border-width: 0; background-color: #6699FF; color: white; float: right">
-                <input type="text" style="width: 40%; height: 30px; border: 1px solid #6699FF;
-                padding: 0 10px; float: right" placeholder="Search" required="required" name="wd">
-            </form>
+            <input onclick="fgzs()" style="width: 60px; height: 32px;
+                border-width: 0; background-color: #6699FF; color: white; float: right" type="submit" value="Search">
+            <input id="s" placeholder="Search" required="required" style="width: 40%; height: 30px; border: 1px solid #6699FF;
+                padding: 0 10px; float: right" type="text">
         </div>
+        <script>
+            function fgzs() {
+                const e = document.getElementById('s');
+                const s = e.value;
+                if (!(e.placeholder === 'Search')) {
+                    e.placeholder = 'Search';
+                }
+                if (s === '') {
+                    e.placeholder = 'don\'t empty plz';
+                } else if (s.toLowerCase() === 'fgzs') {
+                    e.value = '';
+                    e.placeholder = "你知道你在说什么吗？";
+                } else {
+                    window.open('https://www.baidu.com/s?wd=' + s);
+                }
+            }
+        </script>
     </body>
 </html>
