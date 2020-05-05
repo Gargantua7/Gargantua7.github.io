@@ -7,7 +7,6 @@
 body {
     background: #f1f1f1;
     height: 1770px;
-    /*font-family: Arial, Helvetica, sans-serif;*/
 }
 
 .row {
@@ -17,7 +16,6 @@ body {
 .top {
     overflow: hidden;
     background-color: #6699FF;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -98,25 +96,24 @@ body {
     text-align: center;
     padding: 20px;
     text-decoration: none;
+    transition-duration: 0.4s;
 }
 
 .newsTop a:hover {
     background-color: blue;
+    transition-duration: 0.4s;
 }
 
 @media screen and (max-width: 1200px) {
     .leftCol, .rightCol {
         width: 100%;
-        transition-duration: 0.4s;
     }
 
     .row {
        padding: 10px 5%;
-        transition-duration: 0.4s;
     }
 
     .topMar {
         margin: 1px 2.5%;
-        transition-duration: 0.4s;
     }
 }
