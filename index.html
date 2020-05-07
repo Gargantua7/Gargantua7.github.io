@@ -17,7 +17,7 @@
             <a style="padding-bottom: 10px; border-bottom: 4px solid blue">Home</a>
             <a href="re.html">Repositories</a>
             <div class="topMar" id="tmr" style="float: right;"></div>
-            <a href="#top" style="float: right">TOP</a>
+            <a href="#top" id="backTop" style="float: right">TOP</a>
         </div>
         <div class="row" id="body">
             <div class="leftCol" id="lc">
@@ -181,13 +181,29 @@
             </div>
         </div>
         <script>
+            console.log("╭────────┐    ╭─────────┐    ┌───────┐    ╭────────╮\n" +
+                        "│  ┌─────┘    │  ╭──────╯    └────  ╱     │  ╭─────╯\n" +
+                        "│  └───┐      │  │╭─────╮       ╱  ╱      │  ╰─────╮\n" +
+                        "│  ┌───┘      │  │╰──╮  │      ╱  ╱       ╰─────╮  │\n" +
+                        "│  │          │  ╰───╯  │     ╱  ─────┐   ╭─────╯  │\n" +
+                        "└──┘          ╰─────────╯    └────────┘   ╰────────╯");
+
             window.onload = function () {
                 document.getElementById('t').style.transitionDuration = "0.4s";
                 document.getElementById('tml').style.transitionDuration = "0.4s";
                 document.getElementById('tmr').style.transitionDuration = "0.4s";
                 document.getElementById('lc').style.transitionDuration = "0.4s";
-                document.getElementById('lr').style.transitionDuration = "0.4s";
+                document.getElementById('rc').style.transitionDuration = "0.4s";
             }
+
+            window.onscroll = function () {
+                if (document.documentElement.scrollTop + document.body.scrollTop > 144) {
+                    document.getElementById("backTop").style.display = "block";
+                } else {
+                    document.getElementById("backTop").style.display = "none";
+                }
+            }
+        
         </script>
         <footer>
             <iframe src="bottom.html" style="width: 100%; height: 250px; display:block;"></iframe>
