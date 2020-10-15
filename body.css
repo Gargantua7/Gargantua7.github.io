@@ -6,6 +6,7 @@
 
 body {
     background: white;
+    font-family: "Microsoft YaHei", sans-serif !important;
 }
 
 .row {
@@ -108,11 +109,11 @@ body {
     .leftCol, .rightCol {
         width: 100%;
     }
-
+    
     .row {
-       padding: 10px 5%;
+        padding: 10px 5%;
     }
-
+    
     .topMar {
         margin: 1px 2.5%;
     }
